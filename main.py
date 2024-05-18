@@ -21,20 +21,18 @@ if op in('1','2','3','4'):
   n1 = float(input("degite um numero:"))
   n2 = float(input("degite outro nuemro:"))
   if op == '1':
-    print(f"{n1}+{n2} = {som(n1,n2)}")
+    print(f"{n1}+{n2} = {som(n1,n2):2f}")
      
   if op == '2':
-    print(f"{n1}-{n2} = {sub(n1,n2)}")
+    print(f"{n1}-{n2} = {sub(n1,n2):2f}")
 
   if op == '3':
-    print(f"{n1}*{n2} = {mult(n1,n2)}")
+    print(f"{n1}*{n2} = {mult(n1,n2):2f}")
 
   if op == '4':
     if n2 !=0:
-      print(f"{n1}/{n2} = {div(n1,n2):f.2}")
+      print(f"{n1}/{n2} = {div(n1,n2):2f}")
     else:
       print("erro:não é possivel dividir um numero por zero")
 else:
   print("escolha invalida.Por favor, escolha 1,2,3 ou 4")
-  
-  
